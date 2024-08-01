@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="sample2.css">
+</head>
+<body>
+    <div class="sakura-container"></div>
+
+    <section class="hero">
+        <img src="images/file.png" alt="Top Decoration" class="top-decoration">
+        <div class="greetings">
+            <h1 class="left">Srirastu</h1>
+            <h1 class="middle">Subhamastu</h1>
+            <h1 class="right">Avignamastu</h1>
+        </div>
+        <img src="images/god.png" alt="Seetha Rama" class="center-image">
+        <div class="text">
+            <h1>Wedding Invitation Of Katrenikona</h1> 
+            <h2>Rama Usha Sree & Krishna Maitreya</h2>
+            <h3>Join us for a beautiful ceremony</h3>
+        </div>
+        <a href="images/invitation.jpg" target="_blank" class="button">View Invitation</a>
+    </section>
+    
+    <section class="timer-section">
+        <h2>Time To Event</h2>
+        <div class="timer" id="timer">
+            <div>
+                <div id="days">0</div>
+                <span>Day</span>
+            </div>
+            <div>
+                <div id="hours">0</div>
+                <span>O'clock</span>
+            </div>
+            <div>
+                <div id="minutes">0</div>
+                <span>Minute</span>
+            </div>
+            <div>
+                <div id="seconds">0</div>
+                <span>Second</span>
+            </div>
+        </div>
+        <button onclick="addToCalendar()">Save the Date</button>
+    </section>
+
+	<section class="info-section">
+		<img class="info-image" src="images/kalyanamandapam.jpg" alt="Function Hall Image">        
+		<iframe 
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.442609845476!2d83.2319706749441!3d17.77088368318314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39679407542b01%3A0xe06076954402557c!2sSNR%20Function%20Hall!5e0!3m2!1sen!2sin!4v1722179486739!5m2!1sen!2sin" 
+			width="40%" 
+			style="border:0;" 
+			allowfullscreen="" 
+			loading="lazy">
+        </iframe>
+	</section>	     
+
+    <!-- Contact Section-->
+<section id="contact">
+    <div class="contactForm">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <h2>Greetings & Prayers</h2>
+        <div class="inputBox">
+          <input type="hidden" name="access_key" value="1329ded3-2b83-47b0-8947-6acbcf6fce96">
+          <input type="hidden" name="redirect" value="thank-you.html">
+          <input type="text" name="Fullname" required="required">
+          <span>Full Name</span>
+        </div>
+        <div class="inputBox">
+          <input type="tel" name="Phone Number" required="required" pattern="[1-9]{1}[0-9]{9}">
+          <span>Phone Number</span>
+        </div>
+
+        <div class="inputBox select-option">
+            <label for="cars">Confirmation of Attendance</label>
+            <select name="cars" id="cars">
+              <option value="" disabled selected>Select an option</option>
+              <option value="saab">I Will Attend</option>
+              <option value="opel">Attended</option>
+              <option value="audi">Not Attended</option>
+            </select>
+          </div>
+
+          <div class="inputBox">
+            <input type="text" name="Relation" required="required" >
+            <span>Relation With Bride</span>
+          </div>
+          
+        <div class="inputBox">
+          <textarea name="Message" required></textarea>
+          <span>Type Your Message...</span>
+        </div>
+        <div class="inputBox">
+          <button type="submit" name="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!--End Contact section-->
+
+    <footer>
+        <p>&copy; 2024 Wedding Celebration. All rights reserved. Designed & Developed by Sridhar Indraganti</p>
+    </footer>
+
+    <button class="music-control" onclick="toggleMusic()">
+        <i id="music-icon" class="fa-solid fa-play"></i>
+    </button>    
+    
+    <audio id="background-music" autoplay loop>
+        <source src="Kalyanam Vybhogam.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="sample3.js"></script>
+</body>
+</html>
